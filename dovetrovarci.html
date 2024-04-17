@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Radian Medical Center</title>
+    <style>
+      header {
+        text-align: center;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        background-color: black;
+        padding: 15px;
+      }
+
+      footer p {
+        color: white;
+        font-family: calibri;
+        font-size: 20px;
+      }
+      nav {
+        display: flex;
+        background-color: #333;
+        padding: 15px;
+        color: white;
+        margin-bottom: 0;
+      }
+      nav a {
+        margin-right: 15px;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: arial;
+      }
+      footer p, footer a {
+        display: inline;
+      }
+      .footer {
+        font-size: 20px;
+        font-family: calibri;
+      }
+      .footer a {
+        color: white;
+      }
+      .contatti {
+        display: flex;
+        align-items: center;
+        padding-left:250px;
+        padding-top: 0px;
+      }
+      .contatti p {
+         margin-left: 20px;
+         height: 370px;
+         font-family: arial;
+         font-size: 25px;
+         line-height: 1.6;
+      }
+      .immagini {
+       display: flex;
+       flex-direction: column;
+       align-items: flex-end;
+       padding-right: 300px;:
+     }
+     .immagini img {
+       margin-top: 20px;
+     }
+     .contenitore {
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        padding-left: 50px;
+        padding-top: 50px;
+        padding-right: 50px;
+        opacity: 0; /* Initially hide the image */
+        transition: opacity 3s ease; /* Smooth transition for opacity */
+     }
+     .contenitore.loaded {
+       opacity: 1; /* Set opacity to 1 to reveal the image */
+     }
+    </style>
+  </head>
+  <body style="background-color: azure;">
+    <div>
+      <header>
+        <nav>
+          <a href="home.html">Home</a>
+          <a href="chisiamo.html">Chi Siamo</a>
+          <a href="dovetrovarci.html">Dove Trovarci</a>
+          <br>
+        </nav>
+      </header>
+      <br>
+      <div class="contenitore">
+        <div class="contatti">
+          <p>
+            <b>Sede di Lugano:</b>
+            <br>
+            Via Merlina 6, 6962 Viganello
+            <br>
+            Tel: 091 971 06 10
+            <br>
+            <br>
+            <b>Sede di Bellinzona:</b>
+            <br>
+            Via Alla Stazione 3, 6702 Claro
+            <br>
+            Tel: 091 873 45 20
+            <br>
+            <br>
+            <b>Sede di Biasca:</b>
+            <br>
+            Piazza Comunale 4, 6710 Biasca
+            <br>
+            Tel: 091 873 45 21
+         </p>
+        </div>
+        <div class="immagini">
+          <img src="https://lh5.googleusercontent.com/p/AF1QipNQGbEXX3n8BQoHNntXlS4M0tIicpUSKsV0cVw8=w408-h291-k-no">
+          <img src="https://lh5.googleusercontent.com/p/AF1QipMIsxvIIC9GwvG3WVWdKhXDfzVq1bbp_kX3e4Eh=w408-h306-k-no">
+        </div>
+      </div>
+      <script>
+        // JavaScript to add 'loaded' class to the image after the page loads
+        window.addEventListener('load', function() {
+          var image = document.querySelector('.contenitore');
+          image.classList.add('loaded');
+        });
+     </script>
+      <div class="footer">
+        <footer>
+          <p>Questo sito web è stato realizzato da </p>
+          <a href="https://www.linkedin.com/in/benjamin-t-b2262412a/" target="_blank">B.R. Tehrani</a>
+        </footer>
+      </div>
+  </body>
+</html>
