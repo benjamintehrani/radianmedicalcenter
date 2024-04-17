@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Radian Medical Center</title>
+    <style>
+      header {
+        text-align: center;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        background-color: black;
+        padding: 15px;
+      }
+
+      footer p {
+        color: white;
+        font-family: calibri;
+        font-size: 20px;
+      }
+      nav {
+        display: flex;
+        background-color: #333;
+        padding: 15px;
+        color: white;
+        margin-bottom: 0;
+      }
+      nav a {
+        margin-right: 15px;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: arial;
+      }
+      footer p, footer a {
+        display: inline;
+      }
+      .footer {
+        font-size: 20px;
+        font-family: calibri;
+      }
+      .footer a {
+        color: white;
+      }
+      .chisiamo {
+        display: flex;
+        align-items: center;
+        padding-left:250px;
+        padding-top: 120px;
+        opacity: 0; /* Initially hide the image */
+        transition: opacity 3s ease; /* Smooth transition for opacity */
+      }
+      .chisiamo p {
+         margin-left: 20px;
+         height: 370px;
+         font-family:calibri;
+         font-size: 25px;
+         line-height: 1.6;
+      }
+      .chisiamo.loaded {
+        opacity: 1; /* Set opacity to 1 to reveal the image */
+      }
+    </style>
+  </head>
+  <body style="background-color: azure;">
+    <div>
+      <header>
+        <nav>
+          <a href="home.html">Home</a>
+          <a href="chisiamo.html">Chi Siamo</a>
+          <a href="dovetrovarci.html">Dove Trovarci</a>
+          <br>
+        </nav>
+      </header>
+      <br>
+      <div class="chisiamo">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipPanc8wr3EIKQkV19bmmVeacSPLOBUD9GJKgYWI=s1360-w1360-h1020" style="width:600px; height:400px">
+        <script>
+          // JavaScript to add 'loaded' class to the image after the page loads
+          window.addEventListener('load', function() {
+            var image = document.querySelector('.chisiamo');
+            image.classList.add('loaded');
+          });
+       </script>
+        <p>
+          Fondata nel 2016, la Radian Medical Center è una realtà affermata<br>
+          e prestigiosa nel panorama della sanità ticinese.<br>
+          Le notevoli competenze del Dr. Radian Tehrani e<br>
+          l'efficienza dello staff fanno di questo studio<br>
+          medico una scelta affidabile per chi è<br>
+          in cerca cure professionali e all'avanguardia.<br>
+          Con una presenza ben radicata sul territorio del Cantone,<br>
+          siamo facilmente raggiungibili sia nel luganese che nel Sopraceneri.
+        </p>
+      </div>
+      <div class="footer">
+        <footer>
+          <p>Questo sito web è stato realizzato da </p>
+          <a href="https://www.linkedin.com/in/benjamin-t-b2262412a/" target="_blank">B.R. Tehrani</a>
+        </footer>
+      </div>
+  </body>
+</html>
