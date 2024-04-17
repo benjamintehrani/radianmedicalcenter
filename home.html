@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Radian Medical Center</title>
+    <style>
+      header {
+        text-align: center;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .homepage {
+        text-align: center;
+      }
+      footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        background-color: black;
+        padding: 15px;
+      }
+      footer p {
+        color: white;
+        font-family: calibri;
+        font-size: 20px;
+      }
+      nav {
+        display: flex;
+        background-color: #333;
+        padding: 15px;
+        color: white;
+        margin-bottom: 0;
+      }
+      nav a {
+        margin-right: 15px;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: arial;
+      }
+      #benvenuto {
+        text-align: center;
+        font-size: 30px;
+        font-family: calibri;
+      }
+      .unilabs {
+        display: inline-block;
+        border: 2px solid black;
+      }
+      footer p, footer a {
+        display: inline;
+      }
+      .footer {
+        font-size: 20px;
+        font-family: calibri;
+      }
+      .footer a {
+        color: white;
+      }
+      .centrale {
+        opacity: 0; /* Initially hide the image */
+        transition: opacity 3s ease; /* Smooth transition for opacity */
+      }
+      .centrale.loaded {
+        opacity: 1; /* Set opacity to 1 to reveal the image */
+      }
+    </style>
+  </head>
+  <body style="background-color: azure;">
+    <div class="homepage">
+      <header>
+        <nav>
+          <a href="progetto.html">Home</a>
+          <a href="chisiamo.html">Chi Siamo</a>
+          <a href="dovetrovarci.html">Dove Trovarci</a>
+          <br>
+        </nav>
+        <br>
+        <br>
+      </header>
+      <div class="centrale">
+        <img src="https://www.focusjunior.it/content/uploads/2020/08/farmacia-bastone-asclepio.jpg" style="width:300px; height:250px;">
+        <h1 style="font-family:calibri">Radian Medical Center</h1>
+        <p id="benvenuto">
+          <b>Vi diamo il benvenuto sul sito ufficiale del Radian Medical Center.<br>
+          Qui troverete informazioni sui servizi e sulle prenotazioni presso le nostre cliniche, tra le piu' efficienti nel Canton Ticino</b>
+        </p>
+        <br>
+        <br>
+        <br>
+        <div class="unilabs">
+          <img src="https://partoo-storelocator-medias.s3.eu-west-1.amazonaws.com/production/unilabs/15791/11b43897-e617-427c-9e9a-f8dd7658f8d3.png" style="width:70px; height:70px;">
+        </div>
+      </div>
+      <script>
+        // JavaScript to add 'loaded' class to the image after the page loads
+        window.addEventListener('load', function() {
+          var image = document.querySelector('.centrale');
+          image.classList.add('loaded');
+        });
+      </script>
+      <div class="footer">
+        <footer>
+          <p>Questo sito web è stato realizzato da </p>
+          <a href="https://www.linkedin.com/in/benjamin-t-b2262412a/" target="_blank">B.R. Tehrani</a>
+        </footer>
+      </div>
+  </body>
+</html>
